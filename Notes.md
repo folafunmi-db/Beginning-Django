@@ -42,4 +42,11 @@ The Buit-in `TemplateBView` to display our template.
 
 ### URLs
 
-The last step is to update our URLConfs. This update needs to be made in two locations: first we update the project-level `urls.py` file to point to the `pages` app, then within `pages` we match the views to routes.
+The last step is to update our URLConfs. This update needs to be made in two locations: first we update the project-level `urls.py` file to point to the `pages` app, then wi thin `pages` we match the views to routes.
+
+### Tests
+
+Writing tests is important because it automates the process of confirming that the code works as expected.
+`SimpleTestCase` is used instead of `TestCase` because we're not dealing with a database
+
+This is to check if the status code of the site is 200, which means it's OK.
